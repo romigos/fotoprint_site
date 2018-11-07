@@ -1,15 +1,136 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FotoprintSite</title>
+    <title>Центр фотодруку</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' %>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
     <%= yield %>
+    <body onload="setwidth();MM_preloadImages('images/menu_m_payment_a.png');">
+
+
+
+
+    <div id="content" align="left">
+
+      <div id="home_url"><a href="#" class="home_url">www.print.km.ua</a></div>
+      <div id="menu">
+        <ul>
+          <li><a href="#&amp;id=1" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image8','','images/menu_m_services_a.png',1)"><img src="images/menu_m_services.png" alt="услуги" name="Image8" width="221" height="31" border="0" id="Image8"/></a>
+          <li><a href="#&amp;id=2" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image9','','images/menu_m_prices_a.png',1)"><img src="images/menu_m_prices.png" alt="цены" name="Image9" width="221" height="31" border="0" id="Image9"/></a>
+
+          <li><a href="#&amp;id=3" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image19','','images/menu_m_payment_a.png',1)"><img src="img/menu_m_payment.png" alt="способы оплаты" name="Image19" width="221" height="31" border="0" id="Image19"/></a>
+
+          <li><a href="#&amp;id=4" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image101','','images/menu_m_shipping_a.png',1)"><img src="img/menu_m_shipping.png" alt="доставка" name="Image101" width="221" height="31" border="0" id="Image101"/></a>
+          <li><a href="#&amp;id=5" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image11','','images/menu_m_how_a.png',1)"><img src="img/menu_m_how.png" alt="#" name="Image11" width="221" height="31" border="0" id="Image11"/></a>
+          <li><a href="#&amp;id=6" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image12','','images/menu_m_info_a.png',1)"><img src="img/menu_m_info.png" alt="инструкции" name="Image12" width="221" height="31" border="0" id="Image12"/></a>
+          <li><a href="#&amp;id=7" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image13','','images/menu_m_contacts_a.png',1)"><img src="img/menu_m_contacts.png" alt="контакты" name="Image13" width="221" height="31" border="0" id="Image13"/></a>
+        </ul>
+        <form action="http://print.km.ua/" method="post" name="myform" id="myform">
+          <input type="hidden" name="m" id="m" value="auth">
+          <input type="hidden" name="op" id="op" value="login">
+
+          <span class="стиль1"> </span>
+          <div id="login" align="right" style="">
+            <ul id="ul_login"><li>Логин: <input type="text" size="13" id="login1" name="login" onkeypress="javascript:if(13==event.keyCode){return false;}">
+              <br>
+              <li>Пароль: <input type="password" size="13" id="passwd" name="passwd" onkeypress="javascript:if(13==event.keyCode){return false;}">
+                <br>
+
+                <div align="left" style="width:200px;">
+                  <div align="right"><a href="#&amp;op=restore_passwd" class="for">забыли пароль?</a>&nbsp;
+                    <input type="button" value=" войти " onclick="verify_login(this.form);" class="enter"/>&nbsp;&nbsp;&nbsp;&nbsp;       </div>
+                  <div>       </div>
+                </div>
+            </ul>
+          </div>
+        </form>
+        <div id="login" align="right" style="display:none"><ul id="ul_login">
+          <li>Пользователь&nbsp;<b></b></li>
+          <li>На вашем счету&nbsp;<b> грн.</b></li>
+
+          <li><a href="#&amp;op=logout">Выйти</a>
+            <br>
+
+        </ul>
+          <p>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+
+
+
+
+      <div id="right">
+        <p><span style="display:none">&nbsp;<a href="#&amp;op=order&amp;action=edit_photo&amp;act=create"><img src="images/new_24.png" width="24" height="24" border="0">Сделать заказ</a> |
+       &nbsp;<a href="#&amp;op=order&amp;action=list"><img src="img/orders_24.gif" width="24" height="24" border="0">заказы</a> |
+	       &nbsp;<a href="#&amp;op=order&amp;action=myoffice"><img src="img/account_24.png" width="24" height="24" border="0">личный кабинет</a> |
+    &nbsp;<a href="#&amp;op=order&amp;action=price"><img src="ing/money_24.gif" width="24" height="24" border="0">тарифы</a></span></p>
+      </div>
+      <div id="submenu" style="display:none">
+        <br>
+      </div>
+
+      <div id="end"></div>
+
+      <img src="img/right_top_name.gif"/>
+      <a href="#&amp;op=order&amp;action=create" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image10','','img/button_order_a.gif',1)">
+        <img src="img/button_order.gif" alt="заказать" name="Image10" width="636" height="80" border="0" id="Image10"/></a> <br> <br> <br>
+
+
+      <div id="right">
+
+
+        <p>Мы рады представить Вам в Хмельницком сервис по печати цифровых фотографий через Интернет или локальную сеть.</p>
+        <p>У Вас есть цифровой фотоаппарат и Вы хотите поделиться своими фотографиями с друзьями, родствениками  и знакомыми?<br>Но у Вас нет времени  на посещение лаборатории, очереди, оформление заказа, опять очереди  и получение заказа? Тогда добро пожаловать к нам!</p>
+        <p>С помощью нашего сервиса Вы сможете заказать печать цифровых фотографий в режиме онлайн.<br>Возможны любые количества, форматы, предпечатная подготовка и обработка</p>
+        <p>Заказ будет  выполнен на профессиональном оборудовании Noritsu QSS и на следующий день курьер доставит Вам Ваши фотографии.</p>
+
+        <p><img src="img/image_person.gif" width="105" height="94" align="left"/><a href="#&amp;op=registration">Зарегистрировавшись на сайте</a>, Вы получаете возможность  хранить свои фотографии на сервере  в течение месяца, для последующей  или повторной печати.</p>
+        <p><a href="#&amp;op=registration">Зарегистрировавшись на сайте</a>, вы получаете скидку на печать фотографий.</p>
+
+      </div>
+
+
+      <div id="end">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="10" height="10"><img src="img/ramka11.gif" width="10" height="10"/></td>
+            <td background="img/ramka_t.gif" height="10"><img src="img/ramka_t.gif" width="2" height="10"/></td>
+            <td width="10" height="10"><img src="img/images/ramka12.gif" width="10" height="10"/></td>
+          </tr>
+          <tr>
+            <td background="img/ramka_l.gif" width="10"><img src="img/ramka_l.gif" width="10" height="1"/></td>
+            <td>
+              <img src="img/image_paper.png" width="92" height="101" hspace="10" vspace="5" align="left"/>Вы можете загрузить фотографии через наш сайт. Сервис позволяет загружать фотографии с Вашего компьютера. Вы сможете установить количество, размер, тип бумаги и обработку для каждой фотографии. После этого Вам необходимо будет указать Ваши контактные данные и заказ будет оформлен. Загрузка фотографий через ФТП, который доступен по сети провайдеров г. Хмельницкого: Infodom, Happy.net, Datasvit, X-City. Скорость подключения до 100мбит/с, не требует сети интернет!!!	</td>
+            <td background="img/ramka_r.gif" width="10"><img src="img/ramka_r.gif" width="10" height="1"/></td>
+          </tr>
+          <tr>
+            <td height="10" width="10"><img src="img/ramka21.gif" width="10" height="10"/></td>
+            <td background="img/ramka_b.gif" height="10"><img src="img/ramka_b.gif" width="1" height="10"/></td>
+            <td height="10" width="10"><img src="img/ramka22.gif" width="10" height="10"/></td>
+          </tr>
+        </table>
+
+      </div>
+
+    </div>
+    <div id="footer">
+      <div id="copy">© 2018 Центр Фотоп ечати<br><!-- top.km.ua -->
+        <a href="#" target="_blank">
+          <img src="js/counter.php?user=17471&amp;type=1" border="0" width="88" height="31">   </a>
+        <p> <!-- top.km.ua --></p></div>
+      <div id="menu_bottom" align="right">
+        <a href="#&amp;id=1" class="mb">Услуги</a> | <a href="#&amp;id=2" class="mb">Цены</a> | <a href="#&amp;id=3" class="mb">Способы оплаты</a> | <a href="#&amp;id=4" class="mb">Доставка</a> | <a href="#&amp;id=5" class="mb">Условия</a> | <a href="#&amp;id=6" class="mb">Инструкции</a> | <a href="#&amp;id=7" class="mb">Контакты</a>
+      </div>
+    </div>
+    </div>
+    </body>
   </body>
 </html>
