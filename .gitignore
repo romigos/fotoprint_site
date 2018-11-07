@@ -29,3 +29,7 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# file: ~/.gitignore_global
+.DS_Store
+.idea

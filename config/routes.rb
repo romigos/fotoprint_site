@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'main#index', as: 'home'
+  get 'fotoprint' => 'pages#fotoprint', as: 'fotoprint'
+  get 'action' => 'pages#action', as: 'action'
+  get 'price' => 'pages#price', as:'price'
+  get 'delivery' => 'pages#delivery', as: 'delivery'
+  get 'faq' => 'pages#faq', as:'faq'
+  get 'contacts' => 'pages#contacts', as:'contacts'
+
+  resources :posts
 end
