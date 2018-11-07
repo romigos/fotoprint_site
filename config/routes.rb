@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'main#index', as: 'home'
+
   get 'fotoprint' => 'pages#fotoprint', as: 'fotoprint'
   get 'action' => 'pages#action', as: 'action'
   get 'price' => 'pages#price', as:'price'
