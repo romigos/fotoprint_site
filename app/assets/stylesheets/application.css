@@ -17,7 +17,7 @@
 html {height:100%;}
 
 body {
-    background: url(/assets/images/back.png) repeat-x top;
+    background: url(back.png) repeat-x top;
     font-family: Georgia, serif;
     font-size:13px;
     color:#13476d;
@@ -31,13 +31,13 @@ body {
 }
 
 #content {
-    background : url(/img/header_page.gif) no-repeat top;
+    background : url(header_page.gif) no-repeat top;
     width: 1272px;
 }
 
 
 #content_subpage {
-    background : url(/img/back_subpage.gif) no-repeat top;
+    background : url(back_subpage.gif) no-repeat top;
     height: 749px;
     width: 1272px;
 }
@@ -100,7 +100,7 @@ body {
 
     margin: 10px;
     margin-right: 20px;
-    background : url(/img/login_area.gif) no-repeat top;
+    background : url(login_area.gif) no-repeat top;
 }
 
 #ul_login
@@ -230,7 +230,7 @@ li{
 
 }
 
-#footer {   background : url(/img/footer_back.png) repeat-x ;
+#footer {   background : url(footer_back.png) repeat-x ;
     height: 55px;
     padding-top: 20px;
     padding-right: 20px;
