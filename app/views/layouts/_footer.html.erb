@@ -4,6 +4,8 @@
       <img src="js/counter.php?user=17471&amp;type=1" border="0" width="88" height="31">   </a>
     <p> <!-- top.km.ua --></p></div>
   <div id="menu_bottom" align="right">
-    <a href="#&amp;id=1" class="mb">Услуги</a> | <a href="#&amp;id=2" class="mb">Цены</a> | <a href="#&amp;id=3" class="mb">Способы оплаты</a> | <a href="#&amp;id=4" class="mb">Доставка</a> | <a href="#&amp;id=5" class="mb">Условия</a> | <a href="#&amp;id=6" class="mb">Инструкции</a> | <a href="#&amp;id=7" class="mb">Контакты</a>
+   <div class="mb" >
+     <%= link_to "Услуги",   services_path %> | <%= link_to "Цени",   price_path %> | <%= link_to "Условия оплати",   payment_path %> | <%= link_to "Доставка",   delivery_path %> </a> | <%= link_to "Условия",   conditions_path %> | <%= link_to "Инструкции",   faq_path %> |<%= link_to "Контакти", contacts_path %>
+   </div>
   </div>
 </footer>

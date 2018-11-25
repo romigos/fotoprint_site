@@ -1,2 +1,0 @@
-module FotoprintHelper
-end
