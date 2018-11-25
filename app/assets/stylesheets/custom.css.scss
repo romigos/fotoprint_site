@@ -2,10 +2,12 @@
 html {height:100%;}
 
 body {
-  background: url(back.png) repeat-x top;
+  background-repeat: repeat-x;
+  background-position: top;
+  background-image: url(back.png);
   font-family: Georgia, serif;
-  font-size:13px;
-  color:#13476d;
+  font-size: 13px;
+  color: #13476d;
   height: 100%;
   margin-left: 0px;
   margin-top: 0px;
@@ -16,13 +18,17 @@ body {
 }
 
 #content {
-  background : url(header_page.gif) no-repeat top;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url(header_page.gif);
   width: 1272px;
 }
 
 
 #content_subpage {
-  background : url(back_subpage.gif) no-repeat top;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url(back_subpage.gif);
   height: 749px;
   width: 1272px;
 }
@@ -41,7 +47,7 @@ body {
 }
 
 .home_url {
-  font-family:Tahoma;
+  font-family:Tahoma, serif;
   font-size:11px;
   color:#99d4fe;
   text-decoration: underline;
@@ -49,7 +55,7 @@ body {
 }
 
 .home_url:hover {
-  font-family:Tahoma;
+  font-family:Tahoma, serif ;
   font-size:11px;
   color:#99d4fe;
   text-decoration: none;
@@ -85,7 +91,9 @@ body {
 
   margin: 10px;
   margin-right: 20px;
-  background : url(login_area.gif) no-repeat top;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url(login_area.gif);
 }
 
 #ul_login
@@ -173,7 +181,7 @@ a:hover	{
 
 
 #headertext {
-  font-family:Times New Roman;
+  font-family:Times New Roman, serif;
   font-size:24px;
   color:#ADADAD;
 
@@ -182,7 +190,7 @@ a:hover	{
 .text {
   padding-top: 10px;
   line-height: 1.5;
-  font-family:Tahoma;
+  font-family:Tahoma, serif;
   font-size:11px;
   color:#ffffff;
 }
@@ -215,7 +223,8 @@ li{
 }
 
 #footer {
-  background : url(footer_back.png) repeat-x ;
+  background-repeat: repeat-x;
+  background-image: url(footer_back.png);
   height: 55px;
   padding-top: 20px;
   padding-right: 20px;
