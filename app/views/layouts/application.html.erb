@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Центр фотодруку</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <%= stylesheet_link_tag    'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' %>
-        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<head>
+
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all',
+                             'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= render 'layouts/shim' %>
 
   </head>
 
@@ -30,7 +30,7 @@
           <li><a href="#&amp;id=4" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image101','','menu_m_shipping_a.png',1)"><img src="menu_m_shipping.png" alt="доставка" name="Image101" width="221" height="31" border="0" id="Image101"/></a>
           <li><a href="#&amp;id=5" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image11','','menu_m_how_a.png',1)"><img src="menu_m_how.png" alt="#" name="Image11" width="221" height="31" border="0" id="Image11"/></a>
           <li><a href="#&amp;id=6" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image12','','menu_m_info_a.png',1)"><img src="menu_m_info.png" alt="инструкции" name="Image12" width="221" height="31" border="0" id="Image12"/></a>
-          <li><a href="#&amp;id=7" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image13','','menu_m_contacts_a.png',1)"><img src="menu_m_contacts.png" alt="контакты" name="Image13" width="221" height="31" border="0" id="Image13"/></a>
+          <li><%= link_to "контакти",   contacts_path %><a href="#&amp;id=7" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image13','','menu_m_contacts_a.png',1)"><img src="menu_m_contacts.png" alt="контакты" name="Image13" width="221" height="31" border="0" id="Image13"/></a>
         </ul>
         <form action="http://print.km.ua/" method="post" name="myform" id="myform">
           <input type="hidden" name="m" id="m" value="auth">
@@ -102,35 +102,27 @@
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td width="10" height="10"><img src="ramka11.gif" width="10" height="10"/></td>
-            <td background="ramka_t.gif" height="10"><img src="img/ramka_t.gif" width="2" height="10"/></td>
-            <td width="10" height="10"><img src="img/images/ramka12.gif" width="10" height="10"/></td>
+            <td background="ramka_t.gif" height="10"><img src="ramka_t.gif" width="2" height="10"/></td>
+            <td width="10" height="10"><img src="images/ramka12.gif" width="10" height="10"/></td>
           </tr>
           <tr>
             <td background="img/ramka_l.gif" width="10"><img src="img/ramka_l.gif" width="10" height="1"/></td>
             <td>
-              <img src="img/image_paper.png" width="92" height="101" hspace="10" vspace="5" align="left"/>Вы можете загрузить фотографии через наш сайт. Сервис позволяет загружать фотографии с Вашего компьютера. Вы сможете установить количество, размер, тип бумаги и обработку для каждой фотографии. После этого Вам необходимо будет указать Ваши контактные данные и заказ будет оформлен. Загрузка фотографий через ФТП, который доступен по сети провайдеров г. Хмельницкого: Infodom, Happy.net, Datasvit, X-City. Скорость подключения до 100мбит/с, не требует сети интернет!!!	</td>
-            <td background="img/ramka_r.gif" width="10"><img src="img/ramka_r.gif" width="10" height="1"/></td>
+              <img src="image_paper.png" width="92" height="101" hspace="10" vspace="5" align="left"/>Вы можете загрузить фотографии через наш сайт. Сервис позволяет загружать фотографии с Вашего компьютера. Вы сможете установить количество, размер, тип бумаги и обработку для каждой фотографии. После этого Вам необходимо будет указать Ваши контактные данные и заказ будет оформлен. Загрузка фотографий через ФТП, который доступен по сети провайдеров г. Хмельницкого: Infodom, Happy.net, Datasvit, X-City. Скорость подключения до 100мбит/с, не требует сети интернет!!!	</td>
+            <td background="ramka_r.gif" width="10"><img src="ramka_r.gif" width="10" height="1"/></td>
           </tr>
           <tr>
-            <td height="10" width="10"><img src="img/ramka21.gif" width="10" height="10"/></td>
-            <td background="img/ramka_b.gif" height="10"><img src="img/ramka_b.gif" width="1" height="10"/></td>
-            <td height="10" width="10"><img src="img/ramka22.gif" width="10" height="10"/></td>
+            <td height="10" width="10"><img src="ramka21.gif" width="10" height="10"/></td>
+            <td background="ramka_b.gif" height="10"><img src="ramka_b.gif" width="1" height="10"/></td>
+            <td height="10" width="10"><img src="ramka22.gif" width="10" height="10"/></td>
           </tr>
         </table>
 
       </div>
 
     </div>
-    <div id="footer">
-      <div id="copy">© 2018 Центр Фотоп ечати<br><!-- top.km.ua -->
-        <a href="#" target="_blank">
-          <img src="js/counter.php?user=17471&amp;type=1" border="0" width="88" height="31">   </a>
-        <p> <!-- top.km.ua --></p></div>
-      <div id="menu_bottom" align="right">
-        <a href="#&amp;id=1" class="mb">Услуги</a> | <a href="#&amp;id=2" class="mb">Цены</a> | <a href="#&amp;id=3" class="mb">Способы оплаты</a> | <a href="#&amp;id=4" class="mb">Доставка</a> | <a href="#&amp;id=5" class="mb">Условия</a> | <a href="#&amp;id=6" class="mb">Инструкции</a> | <a href="#&amp;id=7" class="mb">Контакты</a>
-      </div>
-    </div>
-    </div>
+    <%= yield %>
+    <%= render 'layouts/footer' %>
     </body>
   </body>
 </html>

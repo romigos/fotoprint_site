@@ -7,6 +7,4 @@ Rails.application.routes.draw do
   get 'delivery' => 'pages#delivery', as: 'delivery'
   get 'faq' => 'pages#faq', as:'faq'
   get 'contacts' => 'pages#contacts', as:'contacts'
-
-  resources :posts
-end
+   end
