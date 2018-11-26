@@ -1,10 +1,10 @@
 <footer class="footer">
-  <div id="copy">© 2018 Центр Фотоп ечати<br><!-- top.km.ua -->
+  <div id="copy">© 2018 Центр Фотопечати<br><!-- top.km.ua -->
     <a href="#" target="_blank">
-      <img src="js/counter.php?user=17471&amp;type=1" border="0" width="88" height="31">   </a>
+      <%= image_tag 'counter.php?user=17471&amp;type=1', width: 88, height: 31, border: 0 %></a>
     <p> <!-- top.km.ua --></p></div>
   <div id="menu_bottom" align="right">
-   <div class="mb" >
+   <div>
      <%= link_to "Услуги",   services_path %> | <%= link_to "Цени",   price_path %> | <%= link_to "Условия оплати",   payment_path %> | <%= link_to "Доставка",   delivery_path %> </a> | <%= link_to "Условия",   conditions_path %> | <%= link_to "Инструкции",   faq_path %> |<%= link_to "Контакти", contacts_path %>
    </div>
   </div>

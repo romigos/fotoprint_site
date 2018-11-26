@@ -8,21 +8,21 @@
   <%= render 'layouts/shim' %>
   </head>
   <body>
-    <%= yield %>
+      <%= yield %>
     <body onload="setwidth();MM_preloadImages('menu_m_payment_a.png');">
     <div id="content" align="left">
       <%= render 'layouts/header' %>
-      <div id="menu">
+            <div id="menu">
         <ul>
-          <li><a href="#&amp;id=1" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image8','','menu_m_services_a.png',1)"><%= link_to "Цени", price_path %><%= image_tag 'menu_m_prices.png', width: 221, height: 31, border: 0 %></li>
-          <li><a href="#&amp;id=2" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image8','','menu_m_services_a.png',1)"><%= link_to "Цени", price_path %><%= image_tag 'menu_m_prices.png', width: 221, height: 31, border: 0 %></li>
-          <li><a href="#&amp;id=3" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image19','','menu_m_payment_a.png',1)"><%= link_to "Цени", price_path %><%= image_tag 'menu_m_payment.png', width: 221, height: 31, border: 0 %></li>
-          <li><a href="#&amp;id=4" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image101','','menu_m_shipping_a.png',1)"><%= link_to "Цени", price_path %><%= image_tag 'menu_m_shipping.png', width: 221, height: 31, border: 0 %></li>
-          <li><a href="#&amp;id=5" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image11','','menu_m_how_a.png',1)"><<%= link_to "Цени", price_path %><%= image_tag 'menu_m_how.png', width: 221, height: 31, border: 0 %></li>
-          <li><a href="#&amp;id=6" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image12','','menu_m_info_a.png',1)"><<%= link_to "Цени", price_path %><%= image_tag 'menu_m_info.png', width: 221, height: 31, border: 0 %></li>
-          <li><<a href="#&amp;id=7" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image13','','menu_m_contacts_a.png',1)"><%= link_to "Цени", price_path %><%= image_tag 'menu_m_contacts.png', width: 221, height: 31, border: 0 %></li>
+          <li><a href="#&amp;id=1" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image7','','menu_m_services_a.png',1)"><%= image_tag 'menu_m_services.png', width: 221, height: 31, border: 0 %></li>
+          <li><a href="#&amp;id=2" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image8','','menu_m_services_a.png',1)"><%= image_tag 'menu_m_prices.png', width: 221, height: 31, border: 0 %></li>
+          <li><a href="#&amp;id=3" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image9','','menu_m_payment_a.png',1)"><%= image_tag 'menu_m_payment.png', width: 221, height: 31, border: 0 %></li>
+          <li><a href="#&amp;id=4" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image10','','menu_m_shipping_a.png',1)"><%= image_tag 'menu_m_shipping.png', width: 221, height: 31, border: 0 %></li>
+          <li><a href="#&amp;id=5" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image11','','menu_m_how_a.png',1)"><%= image_tag 'menu_m_how.png', width: 221, height: 31, border: 0 %></li>
+          <li><a href="#&amp;id=6" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image12','','menu_m_info_a.png',1)"><%= image_tag 'menu_m_info.png', width: 221, height: 31, border: 0 %></li>
+          <li><a href="#&amp;id=7" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image13','','menu_m_contacts_a.png',1)"><%= image_tag 'menu_m_contacts.png', width: 221, height: 31, border: 0 %></li>
         </ul>
-        <form action="http://print.km.ua/" method="post" name="myform" id="myform">
+              <form action="http://print.km.ua/" method="post" name="myform" id="myform">
           <input type="hidden" name="m" id="m" value="auth">
           <input type="hidden" name="op" id="op" value="login">
           <span class="стиль1"> </span>

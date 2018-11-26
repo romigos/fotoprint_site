@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get 'conditions' => 'static_pages#conditions', as:'conditions'
   get 'faq' => 'static_pages#faq', as:'faq'
   get 'contacts' => 'static_pages#contacts', as:'contacts'
+  resources :users
+  resources :services
 end
