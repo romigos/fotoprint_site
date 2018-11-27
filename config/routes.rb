@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'users/new'
   root  'static_pages#home'
   get 'services' => 'static_pages#services', as:'services'
   get 'price' => 'static_pages#price', as:'price'
@@ -7,6 +8,7 @@ Rails.application.routes.draw do
   get 'conditions' => 'static_pages#conditions', as:'conditions'
   get 'faq' => 'static_pages#faq', as:'faq'
   get 'contacts' => 'static_pages#contacts', as:'contacts'
+  match '/signup',  to: 'users#new',            via: 'get'
   resources :users
   resources :services
 end
