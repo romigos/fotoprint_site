@@ -2,9 +2,7 @@
 html {height:100%;}
 
 body {
-  background-repeat: repeat-x;
-  background-position: top;
-  background-image: url(image-path('back.png'));
+  background: url(image-path('back.png')) repeat-x top;
   font-family: Georgia, serif;
   font-size: 13px;
   color: #13476d;

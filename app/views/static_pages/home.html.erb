@@ -10,23 +10,6 @@
       <li><a href="#&amp;id=6" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image12','','menu_m_info_a.png',1)"><%= image_tag 'menu_m_info.png', width: 221, height: 31, border: 0 %></li>
       <li><a href="#&amp;id=7" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image13','','menu_m_contacts_a.png',1)"><%= image_tag 'menu_m_contacts.png', width: 221, height: 31, border: 0 %></li>
     </ul>
-    <form action="http://print.km.ua/" method="post" name="myform" id="myform">
-      <input type="hidden" name="m" id="m" value="auth">
-      <input type="hidden" name="op" id="op" value="login">
-      <span class="стиль1"> </span>
-      <div id="login" align="right" style="">
-        <ul id="ul_login"><li>Логин: <input type="text" size="13" id="login1" name="login" onkeypress="javascript:if(13==event.keyCode){return false;}">
-          <br>
-          <li>Пароль: <input type="password" size="13" id="passwd" name="passwd" onkeypress="javascript:if(13==event.keyCode){return false;}">
-            <br>
-            <div align="left" style="width:200px;">
-              <div align="right"><a href="#&amp;op=restore_passwd" class="for">забыли пароль?</a>&nbsp;
-                <input type="button" value=" войти " onclick="verify_login(this.form);" class="enter"/>&nbsp;&nbsp;&nbsp;&nbsp;       </div>
-              <div>       </div>
-            </div>
-        </ul>
-      </div>
-    </form>
     <div id="login" align="right" style="display:none"><ul id="ul_login">
       <li>Пользователь&nbsp;<b></b></li>
       <li>На вашем счету&nbsp;<b> грн.</b></li>
@@ -55,7 +38,6 @@
     <p>У Вас есть цифровой фотоаппарат и Вы хотите поделиться своими фотографиями с друзьями, родствениками  и знакомыми?<br>Но у Вас нет времени  на посещение лаборатории, очереди, оформление заказа, опять очереди  и получение заказа? Тогда добро пожаловать к нам!</p>
     <p>С помощью нашего сервиса Вы сможете заказать печать цифровых фотографий в режиме онлайн.<br>Возможны любые количества, форматы, предпечатная подготовка и обработка</p>
     <p>Заказ будет  выполнен на профессиональном оборудовании Noritsu QSS и на следующий день курьер доставит Вам Ваши фотографии.</p>
-    <%= render 'layouts/header' %>
     <p><%= image_tag 'image_person.gif', width: 105, height: 94, align: 'left'%> <%= link_to "Зарегистрировавшись на сайте",   signup_path %> Вы получаете возможность  хранить свои фотографии на сервере  в течение месяца, для последующей  или повторной печати.</p>
     <p><%= link_to "Зарегистрировавшись на сайте",   signup_path %>, вы получаете скидку на печать фотографий.</p>
   </div>
