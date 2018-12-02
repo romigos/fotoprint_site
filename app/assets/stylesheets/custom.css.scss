@@ -2,31 +2,27 @@
 html {height:100%;}
 
 body {
-  background: url(image-path('back.png')) repeat-x top;
+  background: url(back.png) repeat-x top;
   font-family: Georgia, serif;
-  font-size: 13px;
-  color: #13476d;
+  font-size:13px;
+  color:#13476d;
   height: 100%;
-  margin-left: 0;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
   line-height: 1.5;
 
 }
 
 #content {
-  background-repeat: no-repeat;
-  background-position: top;
-  background-image: url(image-path('header_page.gif'));
+  background : url(header_page.gif) no-repeat top;
   width: 1272px;
 }
 
 
 #content_subpage {
-  background-repeat: no-repeat;
-  background-position: top;
-  background-image: url(image-path('back_subpage.gif'));
+  background : url(back_subpage.gif) no-repeat top;
   height: 749px;
   width: 1272px;
 }
