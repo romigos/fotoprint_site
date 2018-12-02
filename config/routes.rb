@@ -1,20 +1,6 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
-  get 'static_pages/services'
-  get 'static_pages/price'
-  get 'static_pages/payment'
-  get 'static_pages/delivery'
-  get 'static_pages/conditions'
-  get 'static_pages/faq'
-  get 'static_pages/contacts'
-  get 'static_pages/services'
-  get 'static_pages/price'
-  get 'static_pages/payment'
-  get 'static_pages/delivery'
-  get 'static_pages/conditions'
-  get 'static_pages/faq'
-  get 'static_pages/contacts'
-  get 'users/new'
+  devise_for :users
+
   root  'static_pages#home'
   get 'services' => 'static_pages#services', as:'services'
   get 'price' => 'static_pages#price', as:'price'
@@ -23,7 +9,6 @@ Rails.application.routes.draw do
   get 'conditions' => 'static_pages#conditions', as:'conditions'
   get 'faq' => 'static_pages#faq', as:'faq'
   get 'contacts' => 'static_pages#contacts', as:'contacts'
-  match '/signup',  to: 'users#new',            via: 'get'
-  resources :users
-  resources :services
+
+
 end
