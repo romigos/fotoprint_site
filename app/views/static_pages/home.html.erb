@@ -10,37 +10,53 @@
       <li><a href="#&amp;id=6" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image12','','menu_m_info_a.png',1)"><%= image_tag 'menu_m_info.png', width: 221, height: 31, border: 0 %></li>
       <li><a href="#&amp;id=7" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image13','','menu_m_contacts_a.png',1)"><%= image_tag 'menu_m_contacts.png', width: 221, height: 31, border: 0 %></li>
     </ul>
+
     <div id="login" align="right" style="">
     <%= form_for(:user, :url => session_path(:user)) do |f| %>
-      <%= f.text_field :email %>
-      <%= f.password_field :password %>
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-      <%= f.submit 'Sign in' %>
-      <%= link_to "Forgot your password?", new_password_path(:user) %>
-    <% end %>
+        <div class="field">
+          <%= f.label :email %><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        </div>
+
+        <div class="field">
+          <%= f.label :password %><br />
+          <%= f.password_field :password, autocomplete: "current-password" %>
+        </div>
+
+        <% if Devise.mappings[:user].rememberable? -%>
+          <div class="field">
+            <%= f.check_box :remember_me %>
+            <%= f.label :remember_me %>
+          </div>
+        <% end -%>
+
+        <div class="actions">
+          <%= f.submit "Log in" %>
+        </div>
+      <% end %>
+
 
     </div>
 
-    <form action="http://print.km.ua/" method="post" name="myform" id="myform">
-      <input type="hidden" name="m" id="m" value="auth">
-      <input type="hidden" name="op" id="op" value="login">
 
-      <span class="стиль1"> </span>
-      <div id="login" align="right" style="">
-        <ul id="ul_login"><li>Логин: <input type="text" size="13" id="login1" name="login" onkeypress="javascript:if(13==event.keyCode){return false;}">
-          <br>
-          <li>Пароль: <input type="password" size="13" id="passwd" name="passwd" onkeypress="javascript:if(13==event.keyCode){return false;}">
-            <br>
 
-            <div align="left" style="width:200px;">
-              <div align="right"><a href="#&amp;op=restore_passwd" class="for">забыли пароль?</a>&nbsp;
-                <input type="button" value=" войти " onclick="verify_login(this.form);" class="enter"/>&nbsp;&nbsp;&nbsp;&nbsp;       </div>
-              <div>       </div>
-            </div>
-        </ul>
-      </div>
-    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div id="login" align="right" style="display:none"><ul id="ul_login">
       <li>Пользователь&nbsp;<b></b></li>
       <li>На вашем счету&nbsp;<b> грн.</b></li>

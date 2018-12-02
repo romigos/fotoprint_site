@@ -1,0 +1,40 @@
+<div id="content" align="left">
+  <div id="menu">
+    <ul>
+      <li><a href="#&amp;id=1" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image7','','menu_m_services_a.png',1)"><%= image_tag 'menu_m_services.png', width: 221, height: 31, border: 0 %></li>
+      <li><a href="#&amp;id=2" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image8','','menu_m_services_a.png',1)"><%= image_tag 'menu_m_prices.png', width: 221, height: 31, border: 0 %></li>
+      <li><a href="#&amp;id=3" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image9','','menu_m_payment_a.png',1)"><%= image_tag 'menu_m_payment.png', width: 221, height: 31, border: 0 %></li>
+      <li><a href="#&amp;id=4" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image10','','menu_m_shipping_a.png',1)"><%= image_tag 'menu_m_shipping.png', width: 221, height: 31, border: 0 %></li>
+      <li><a href="#&amp;id=5" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image11','','menu_m_how_a.png',1)"><%= image_tag 'menu_m_how.png', width: 221, height: 31, border: 0 %></li>
+      <li><a href="#&amp;id=6" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image12','','menu_m_info_a.png',1)"><%= image_tag 'menu_m_info.png', width: 221, height: 31, border: 0 %></li>
+      <li><a href="#&amp;id=7" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image13','','menu_m_contacts_a.png',1)"><%= image_tag 'menu_m_contacts.png', width: 221, height: 31, border: 0 %></li>
+    </ul>
+<h2>Log in</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "current-password" %>
+  </div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end -%>
+
+  <div class="actions">
+    <%= f.submit "Log in" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+  </div>
+</div>
+<%= yield %>
